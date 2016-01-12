@@ -1,0 +1,23 @@
+{
+  "name": "nofat",
+  "version": "0.0.0",
+  "description": "Set of tools to kick start server side ES2016 development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnmtanish/nofat.git"
+  },
+  "keywords": [
+    "javascript",
+    "es2016"
+  ],
+  "author": "MNM Thanish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnmtanish/nofat/issues"
+  },
+  "homepage": "https://github.com/mnmtanish/nofat#readme"
+}
