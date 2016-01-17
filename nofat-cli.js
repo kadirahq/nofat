@@ -6,6 +6,9 @@ var tasks = require('./tasks');
 // set global variables
 __rootdir = __dirname;
 
+// update the PATH variable to include local node modules bins
+process.env.PATH += ':' + path.join(__dirname, 'node_modules/.bin');
+
 // get user parameters
 var base = process.cwd();
 var srcd = path.join(base, 'src');
