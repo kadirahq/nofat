@@ -9,6 +9,7 @@ __rootdir = __dirname;
 
 // update the PATH variable to include local node modules bins
 process.env.PATH += ':' + path.join(__dirname, 'node_modules/.bin');
+process.env.NODE_PATH = path.join(__dirname, 'node_modules');
 
 // get user parameters
 var base = path.join(__dirname, 'temp');
