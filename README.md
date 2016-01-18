@@ -8,7 +8,7 @@ NoFat is an attempt to cure js-fatigue by providing the user a set of default co
  - Place all your ES2016 code in `src`. Transpiled ES5 code will be placed in `lib`.
  - Place test code along with source code and add a `_test` suffix to your test file names.
 
-# Installation
+# Setup
 
  - Install the module `npm i -sD nofat`
  - Copy following to your `package.json`
