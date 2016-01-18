@@ -9,6 +9,6 @@ module.exports = function (args, srcd, libd) {
   // inject nofat runtime into index.js
   var code = fs.readFileSync(path.join(libd, 'index.js'), 'utf-8');
   var lines = code.split('\n');
-  lines.splice(1, 0, '\nrequire(\'nofat/runtime\');');
+  lines.splice(1, 0, '\nrequire(\'nofat-runtime\');');
   fs.writeFileSync(path.join(libd, 'index.js'), lines.join('\n'));
 };
