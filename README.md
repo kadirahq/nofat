@@ -6,7 +6,7 @@ NoFat is an attempt to cure js-fatigue by providing the user a set of default co
 
  - Create a `package.json` file to put npm scripts and install nofat as a dev-dependency.
  - Place all your ES2016 code in `src`. Transpiled ES5 code will be placed in `lib`.
- - Place test code along with source code and add a `_test` suffix to your test file names.
+ - Place all your test code along with source code inside directories named `__test__`.
 
 # Setup
 
@@ -23,8 +23,3 @@ NoFat is an attempt to cure js-fatigue by providing the user a set of default co
 ```
 
  - Use `npm start` to run your program
-
-# TODO
-
- - Implement `test`, `lint` features and `--watch` argument for all
- - Automatically copy scripts to `package.json` (and prefix names)
