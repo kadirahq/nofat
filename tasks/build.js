@@ -3,17 +3,8 @@ var path = require('path');
 var sh = require('shelljs');
 
 module.exports = function (args, srcd, libd) {
-  var command = [
-    'babel',
-    '--presets es2015,stage-3',
-    '--source-maps',
-    '--no-babelrc',
-    '-d ' + libd,
-    srcd,
-  ].join(' ');
-
   sh.cd(__rootdir);
-  sh.exec(command);
+  sh.exec('babel -s -d ' + libd + ' ' + srcd);
 
   // inject nofat runtime into index.js
   var code = fs.readFileSync(path.join(libd, 'index.js'), 'utf-8');
