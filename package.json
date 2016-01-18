@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mnmtanish/nofat.git"
+    "url": "git+https://github.com/kadirahq/nofat.git"
   },
   "keywords": [
     "javascript",
     "es2016"
   ],
-  "author": "MNM Thanish",
+  "author": "KadiraHQ",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mnmtanish/nofat/issues"
+    "url": "https://github.com/kadirahq/nofat/issues"
   },
-  "homepage": "https://github.com/mnmtanish/nofat#readme",
+  "homepage": "https://github.com/kadirahq/nofat#readme",
   "dependencies": {
     "babel-cli": "6.x.x",
     "babel-eslint": "4.1.6",
