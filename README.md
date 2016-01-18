@@ -11,15 +11,19 @@ NoFat is an attempt to cure js-fatigue by providing the user a set of default co
 # setup
 
  - Install the module `npm i -sD nofat`
- - Copy following to your `package.json`
+
+```
+npm install nofat-runtime
+npm install -sD nofat
+```
+
+ - Setup npm scripts (copy this to your `package.json`)
 
 ```
 "scripts": {
-  "build": "nofat build",
-  "lint": "nofat lint",
-  "start": "nofat start",
-  "test": "nofat test"
+  "nf:build": "nofat build",
+  "nf:lint": "nofat lint",
+  "nf:test": "nofat test",
+  "start": "node lib/index.js"
 }
 ```
-
- - Use `npm start` to run your program
