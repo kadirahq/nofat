@@ -13,8 +13,8 @@ NoFat is an attempt to cure js-fatigue by providing the user a set of default co
  - Install the module `npm i -sD nofat`
 
 ```
-npm install nofat-runtime
-npm install -sD nofat
+npm install -S nofat-runtime
+npm install -D nofat
 ```
 
  - Setup npm scripts (copy this to your `package.json`)
