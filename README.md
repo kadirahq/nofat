@@ -10,7 +10,7 @@ NoFat is an attempt to cure js-fatigue by providing the user a set of default co
 
 ## setup
 
- - Install the module `npm i -sD nofat`
+ - Install the module
 
 ```
 npm install -S nofat-runtime
@@ -23,6 +23,7 @@ npm install -D nofat
 "scripts": {
   "nf:build": "nofat build",
   "nf:lint": "nofat lint",
+  "nf:start": "nofat start",
   "nf:test": "nofat test",
   "start": "node lib/index.js"
 }
