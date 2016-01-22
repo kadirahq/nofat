@@ -4,6 +4,7 @@ var sh = require('shelljs');
 
 module.exports = function (args, srcd, libd) {
   sh.cd(__rootdir);
+  sh.rm('-rf', libd);
   sh.exec('babel -s -d ' + libd + ' ' + srcd);
 
   // inject nofat runtime into index.js
