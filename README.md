@@ -1,23 +1,19 @@
 # nofat
 
-> status: proof-of-concept
+> status: alpha
 
-NoFat is an attempt to cure js-fatigue by providing the user a set of default configurations. After setting up nofat (which won't take a minute), developers can start working on their application instead of messing around with boilerplate code totally unrelated to their application. For now, nofat requires users to follow a set of conventions:
-
- - Create a `package.json` file to put npm scripts and install nofat as a dev-dependency.
- - Place all your ES2016 code in `src`. Transpiled ES5 code will be placed in `lib`.
- - Place all your test code along with source code inside directories named `__test__`.
+NoFat is an attempt to cure js-fatigue by providing the user a set of default configurations. After setting up nofat (which won't take a minute), developers can start working on their application instead of messing around with boilerplates.
 
 ## setup
 
- - Install the module
+ - Install the `nofat` module and the `babel-polyfill`
 
 ```
-npm install -S nofat-runtime
+npm install -S babel-polyfill
 npm install -D nofat
 ```
 
- - Setup npm scripts (copy this to your `package.json`)
+ - Configure npm scripts (copy this to your `package.json`)
 
 ```
 "scripts": {
@@ -29,7 +25,13 @@ npm install -D nofat
 }
 ```
 
-## issues
+- Place all your code in `src` directory with `src/index.js` as the starting point
+- Place all your test code along with source code inside directories named `__tests__`.
 
- - NoFat relies on the way npm 3 stores node modules. Discuss this issue [here](https://github.com/kadirahq/nofat/issues/2)
- - Please check https://github.com/kadirahq/nofat/issues for other issues.
+```
+src/
+  hello.js
+  index.js
+  __tests__/
+    index.js
+```
