@@ -19,7 +19,7 @@ npm install -D nofat
 "scripts": {
   "nf:build": "nofat build",
   "nf:lint": "nofat lint",
-  "nf:test": "nofat test",
+  "nf:test": "nofat test"
 }
 ```
 
