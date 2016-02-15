@@ -1,6 +1,6 @@
 {
   "name": "nofat",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "A simple cure for js-fatigue.",
   "main": "index.js",
   "scripts": {
