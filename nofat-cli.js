@@ -6,7 +6,6 @@ var tasks = require('./tasks');
 
 // set global variables
 __rootdir = __dirname;
-sh.config.silent = true;
 sh.config.fatal = true;
 
 // update the PATH variable to include local node modules bins
