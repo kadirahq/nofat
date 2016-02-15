@@ -16,10 +16,10 @@ npm install -D nofat
  - Configure npm scripts (copy this to your `package.json`)
 
 ```
-"main": "lib/index.js",
 "scripts": {
-  "start": "nofat build && node lib/index.js",
-  "test": "nofat build && nofat test && nofat lint"
+  "nf:build": "nofat build",
+  "nf:lint": "nofat lint",
+  "nf:test": "nofat test",
 }
 ```
 
