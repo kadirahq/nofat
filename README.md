@@ -19,7 +19,6 @@ npm install -D nofat
 "scripts": {
   "nf:build": "nofat build",
   "nf:lint": "nofat lint",
-  "nf:start": "nofat start",
   "nf:test": "nofat test",
   "start": "node lib/index.js"
 }
