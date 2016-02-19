@@ -6,11 +6,11 @@ NoFat is an attempt to cure js-fatigue by providing the user a set of default co
 
 ## setup
 
- - Install all required modules
+ - Install `nofat` and it's peer dependencies.
 
 ```
-npm install -S babel-polyfill source-map-support
 npm install -D nofat
+npm install -S babel-polyfill source-map-support
 ```
 
  - Configure npm scripts (copy this to your `package.json`)
@@ -31,11 +31,4 @@ src/
   index.js
   __tests__/
     hello.js
-```
-
- - Add these lines before everything else on your main files.
-
-```
-import 'babel-polyfill';
-import 'source-map-support/register';
 ```
