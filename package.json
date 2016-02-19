@@ -33,6 +33,7 @@
     "eslint-plugin-babel": "3.x.x",
     "mocha": "2.x.x",
     "shelljs": "0.5.x",
-    "sinon": "1.x.x"
+    "sinon": "1.x.x",
+    "source-map-support": "0.4.x"
   }
 }

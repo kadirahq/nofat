@@ -6,10 +6,4 @@ module.exports = function (args, srcd, libd) {
   sh.cd(__rootdir);
   sh.rm('-rf', libd);
   sh.exec('babel -s -d ' + libd + ' ' + srcd + ' ' + args.join(' '));
-
-  // inject 'babel-polyfill' into index.js
-  var code = fs.readFileSync(path.join(libd, 'index.js'), 'utf-8');
-  var lines = code.split('\n');
-  lines.splice(1, 0, '\nrequire(\'babel-polyfill\');');
-  fs.writeFileSync(path.join(libd, 'index.js'), lines.join('\n'));
 };
