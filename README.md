@@ -33,7 +33,7 @@ src/
     hello.js
 ```
 
- - Add these lines before everything else on your main file. If you have multiple main modules, add these lines on all of them.
+ - Add these lines before everything else on your main files.
 
 ```
 import 'babel-polyfill';
