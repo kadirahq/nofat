@@ -1,7 +1,5 @@
 # nofat
 
-> status: alpha
-
 NoFat is an attempt to cure js-fatigue by providing the user a set of default configurations. After setting up nofat, developers can start working on their application instead of messing around with boilerplates. The bundle includes Babel for transpiling code, Mocha+Chai+Sinon for tests and ESLint to check code style.
 
 ## setup
@@ -32,3 +30,7 @@ src/
   __tests__/
     hello.js
 ```
+
+## why nofat?
+
+The main reason is that it doesn't require any additional runtime dependencies (except `babel-polyfill` and `source-map-support` for now) so your finished module will be lightweight. And of course, no js-fatigue!
