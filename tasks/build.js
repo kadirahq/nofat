@@ -6,7 +6,7 @@ var sh = require('shelljs');
 module.exports = function (args, srcd, libd) {
   sh.cd(__rootdir);
   sh.rm('-rf', libd);
-  sh.exec('babel -s -d ' + libd + ' ' + srcd + ' ' + args.join(' '));
+  sh.exec('babel -s -d -D ' + libd + ' ' + srcd + ' ' + args.join(' '));
 
   var headers = [
     'require(\'babel-polyfill\');',
