@@ -15,8 +15,8 @@ npm install -S babel-polyfill source-map-support
 
 ```
 "scripts": {
-  "make": "nofat build",
-  "test": "nofat build && nofat test && nofat lint"
+  "make": "nofat make",
+  "test": "nofat test && nofat lint"
 }
 ```
 
