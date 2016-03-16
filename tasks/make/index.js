@@ -37,7 +37,7 @@ module.exports = function (options) {
     var babelopts = {
       presets: [ 'es2015', 'stage-3' ],
       sourceMaps: 'inline',
-      sourceRoot: options.projectDir,
+      sourceRoot: srcdir,
     };
 
     babel.transformFile(srcfile, babelopts, function (err, res) {
