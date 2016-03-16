@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var tasks = require('../tasks');
+
+var args = process.argv.slice(2);
+var task = args.shift();
+
+if (!tasks[task]) {
+  console.error('unknown task');
+  process.exit(1);
+}
+
+tasks[task]({
+  arguments: args,
+  projectDir: process.cwd(),
+  nofatRootDir: path.resolve(__dirname, '..'),
+});
