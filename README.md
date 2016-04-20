@@ -30,7 +30,7 @@ src/
     hello.js
 ```
 
-## dafaq?
+## daFAQ?
 
 **why nofat?**
 
@@ -38,7 +38,7 @@ The main reason is that it doesn't require any additional runtime dependencies e
 
 **ignore files**
 
-Add the `lib` directory to your `.gitignore` file and `src` directory to your `.npmignore` file. Note that having a `.npmignore` file is important because otherwise npm will use your `.gitignore` file as your `.npmignore` file which is not what we want.
+You may add the `lib` directory to your `.gitignore` file and `src` directory to your `.npmignore` file. Note that having a `.npmignore` file is important because otherwise npm will use your `.gitignore` file as your `.npmignore` file which is not what we want.
 
 **writing tests**
 
