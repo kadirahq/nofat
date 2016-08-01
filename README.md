@@ -4,11 +4,10 @@ NoFat is an attempt to cure js-fatigue by providing the user a set of default co
 
 ## setup
 
- - Install `nofat` and a few dependencies.
+ - Install `nofat`
 
 ```
 npm install -D nofat
-npm install -S babel-polyfill source-map-support
 ```
 
  - Configure npm scripts (add to `package.json`)

@@ -5,11 +5,6 @@ var babel = require('babel-core');
 var shell = require('shelljs');
 shell.config.fatal = true;
 
-var HEADERS = [
-  'require(\'babel-polyfill\');',
-  'require(\'source-map-support/register\');',
-].join('\n');
-
 module.exports = function (options) {
   var srcdir = path.join(options.projectDir, 'src');
   var libdir = path.join(options.projectDir, 'lib');
@@ -28,8 +23,8 @@ module.exports = function (options) {
     var libfile = path.join(libdir, fpath);
     shell.mkdir('-p', path.dirname(libfile));
 
-    var extension = path.extname(fpath).toUpperCase();
-    if (extension !== '.JS') {
+    var extension = path.extname(fpath);
+    if (extension.toUpperCase() !== '.JS') {
       shell.cp(srcfile, libfile);
       return;
     }
@@ -44,12 +39,7 @@ module.exports = function (options) {
       if (err) {
         throw err;
       }
-
-      var lines = res.code.split('\n');
-      lines.splice(1, 0, '\n' + HEADERS);
-      var content = lines.join('\n');
-
-      fs.writeFile(libfile, content, function (err) {
+      fs.writeFile(libfile, res.code, function (err) {
         if (err) {
           throw err;
         }

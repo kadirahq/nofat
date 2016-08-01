@@ -36,9 +36,5 @@
     "mocha": "2.x.x",
     "shelljs": "0.5.x",
     "sinon": "1.x.x"
-  },
-  "peerDependencies": {
-    "babel-polyfill": "6.x.x",
-    "source-map-support": "0.4.x"
   }
 }
